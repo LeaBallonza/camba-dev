@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/layout/_grid.scss",
+        "../sass/views/_index.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
