@@ -1,0 +1,236 @@
+
+
+main
+{
+    width: 100%;
+	max-width: 1600px;	
+	margin: 0;
+	
+	
+
+	@media (max-width: 767px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+    .banner	
+{
+    color: #FFF;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    background-image: url('../css/multimedia/portada3.jpg');
+    background-position: top right;
+    background-size: cover;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background-color: orange;
+        opacity: 0.8;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+
+        h1 {
+            font-size: 72px;
+            margin-bottom: 32px;
+            
+            span {
+                color: #FF9FDB;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 32px;
+            }
+        }
+
+        h3 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 32px;
+
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+    }
+    
+}
+	
+		
+}
+header {
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	// background-color: #12002F;
+
+	.container {
+		padding-top: 10px;
+		padding-bottom: 32px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h2 {
+			color: inherit;
+			text-transform: uppercase;
+			font-size: 32px;
+			font-weight: 900;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		nav {
+			display: grid;
+			grid-gap: 16px;
+			grid-template-columns: repeat(4, auto);
+
+			@media (max-width: 767px) {
+				display: none;
+			}
+
+			a {
+				color: inherit;
+				font-size: 20px;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&.is-scrolling {
+		background-color: orange;
+        .container {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+	
+	}
+}
+
+.container
+{
+    padding-left: 64px;
+	padding-right: 64px;
+}
+.portada
+{ 
+    grid-area: portada;
+
+
+}
+.titulo 
+{
+	text-align: center;
+    margin-top: 32px;
+	margin-bottom: 32px;
+	text-transform: uppercase;
+	color: #313131;
+	font-size: 36px;
+}
+.tecnologia
+{
+    background-color: gray;
+}
+.tecno
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "tecno1 tecno2";
+    grid-gap: 1px;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "tecno1" 
+        "tecno2";
+    }
+
+    .tecno_uno
+    {
+        grid-area: tecno1;
+        max-width: 100%; 
+        border: solid orange;
+        border-radius: 15px;
+    }
+    .tecno_dos
+    {
+        grid-area: tecno2;
+        border: solid orange;
+        border-radius: 15px;
+
+            .tecno_dos_img
+            {
+                display: block;
+				max-width: 100%;				
+				object-fit: cover;
+                border-radius: 15px;                
+            }
+    }
+}
+.servicios-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
+    .servi
+    {
+        border: solid orange;
+        border-radius: 15px;
+     
+        .servi_img
+        {
+            display: block;
+            width: 100%;
+            height: 128px;
+            object-fit: cover;
+        }
+    }
+}
+footer{
+    padding-left: 32px;
+	padding-right: 32px;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+}
+.logo_img
+{
+    height: 2.5em;
+    width: 10em;  
+}
+.footer_redes
+{
+   justify-self: end; 
+}
+.footer__redes__img
+{
+    height: 27px;
+    width: 27px;
+}

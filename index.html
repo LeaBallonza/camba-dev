@@ -4,55 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/style.css">
     <title>CAMBA-DEV</title>
 </head>
 <body>
     <header>
+      <div class="container">
         <div class="logo">
           <a class="logo_item" href="#"><img class="logo_img" src="css/multimedia/logo1.jpg" alt="logo">
           </a>
         </div>
         <div class="menu">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+          </nav>
         </div>
-    </header>
-    <div class="portada">
-      <img src="" alt="portada">
-    </div>
-    <div class="tecno">
-      <div class="tecno_item">
-        <p class="tecno_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas maxime quisquam alias ullam fugiat eaque assumenda quidem dolor, ipsum impedit, a deserunt optio accusamus corporis culpa? Ipsa, quaerat hic!</p>
       </div>
-      <div class="tecno_item">
-        <img class="tecno_img" src="" alt="">
-      </div>      
-    </div>
-    <div class="servicios">
-      <div class="servi_uno"> 
-        <p class="servi_uno_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur! Tempore fugit nesciunt eum!</p>    
-      </div>
-      <div class="servi_dos"> 
-        <p class="servi_dos_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur! Tempore fugit nesciunt eum!</p>    
-      </div>
-      <div class="servi_tres">
-        <p class="servi_dos_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur! Tempore fugit nesciunt eum!</p>     
-      </div>
-    </div>
+      </header>
+      <main>
+        <section class="banner">
+          <div class="container">
+            <div class="portada">
+              <h1>
+              Websites you're <br class="hide-mob" />
+              <span>not afraid</span> to share
+              </h1>
+
+              <h3>Website solutions for all your needs</h3>
+            </div>
+          </div>
+        </section>
+        <section class="tecnologia">
+          <div class="container">
+            <h2 class="titulo">tecnologias</h2>
+              <div class="tecno">
+                <div class="tecno_uno">
+                    <p class="tecno_uno_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptas maxime quisquam alias ullam fugiat eaque assumenda quidem dolor, ipsum impedit, a deserunt optio accusamus corporis culpa? Ipsa, quaerat hic!</p>
+                </div>      
+                  <div class="tecno_dos">
+                    <img class="tecno_dos_img" src="css/multimedia/tecno2.png" alt="tecnologias">
+                </div>
+              </div>
+           </div>   
+        </section>
+        <section class="servicios">
+          <div class="container">
+            <h2 class="titulo">servicios</h2>
+            <div class="servicios-grid">
+              <div class="servi"> 
+                <img class="servi_img" src="css/multimedia/tecno2.png" alt="tecnologias">
+                <h3>Websites</h3>
+                <p class="servi_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur</p>    
+              </div>
+              <div class="servi">
+                <img class="servi_img" src="css/multimedia/tecno2.png" alt="tecnologias">
+                <h3>Redes</h3>
+                <p class="servi_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur!</p>    
+              </div>
+              <div class="servi">
+                <img class="servi_img" src="css/multimedia/tecno2.png" alt="tecnologias">
+                <h3>Reparacion de pc</h3>
+                <p class="servi_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur!</p>     
+              </div>
+              <div class="servi">
+                <img class="servi_img" src="css/multimedia/tecno2.png" alt="tecnologias">
+                <h3>Soporte remoto</h3>
+                <p class="servi_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse sunt eveniet qui, nemo deleniti pariatur!</p>     
+              </div>
+            </div>
+          </div> 
+        </section>
+  </main>
     <footer class="footer">
       <div class="footer_copy" id="copyright">&copy; 2021 - CAMBA-DEV - Todos los derechos reservados
       </div>
@@ -60,6 +85,6 @@
 			  <a class="footer__redes__item" href="https://instagram.com/"> <img class="footer__redes__img" src="css\multimedia\insta.png" alt="Instagram"></a>
 			</div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> 
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
