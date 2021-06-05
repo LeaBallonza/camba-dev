@@ -1,28 +1,37 @@
+*
+{   margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-
-main
+section
 {
-    width: 100%;
-	max-width: 1600px;	
-	margin: 0;
-	
-	
+    
+    padding-left: 128px;
+	padding-right: 128px;
+
+	@media (max-width: 1024px) {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
 
 	@media (max-width: 767px) {
 		padding-left: 32px;
 		padding-right: 32px;
 	}
+}
 
-    .banner	
+
+.banner	
 {
-    color: #FFF;
+    color: #fff;
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     
     background-image: url('../css/multimedia/portada3.jpg');
-    background-position: top right;
+    background-position: top center;
     background-size: cover;
     &:after {
         content: '';
@@ -33,16 +42,18 @@ main
         right: 0;
         bottom: 0;
         z-index: 0;
-        background-color: orange;
+        background-color: #0544cf;
         opacity: 0.8;
     }
     .container {
+        
         position: relative;
         z-index: 1;
 
         h1 {
             font-size: 72px;
             margin-bottom: 32px;
+        
             
             span {
                 color: #FF9FDB;
@@ -62,40 +73,50 @@ main
                 font-size: 20px;
             }
         }
-    }
-    
+    }	
 }
-	
-		
-}
-header {
+header 
+    {
 	color: #fff;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 99;
-	// background-color: #12002F;
 
-	.container {
-		padding-top: 10px;
-		padding-bottom: 32px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+    .logo_img
+    {
+        height: 2.5em;
+        width: 10em;  
+    }
+    
+	.container 
+        {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding-left: 128px;
+            padding-right: 128px;
+		    padding-top: 10px;
+		    padding-bottom: 32px;
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
 
-		h2 {
-			color: inherit;
-			text-transform: uppercase;
-			font-size: 32px;
-			font-weight: 900;
+		h2 
+            {
+                color: inherit;
+                text-transform: uppercase;
+                font-size: 32px;
+                font-weight: 900;
 
-			span {
+			span 
+            {
 				font-weight: 600;
 			}
 		}
 
-		nav {
+		nav 
+        {
 			display: grid;
 			grid-gap: 16px;
 			grid-template-columns: repeat(4, auto);
@@ -105,7 +126,7 @@ header {
 			}
 
 			a {
-				color: inherit;
+				color: #fff;
 				font-size: 20px;
 				text-decoration: none;
 			}
@@ -113,7 +134,7 @@ header {
 	}
 
 	&.is-scrolling {
-		background-color: orange;
+		background-color: #0544cf;
         .container {
 			padding-top: 16px;
 			padding-bottom: 16px;
@@ -121,33 +142,38 @@ header {
 	
 	}
 }
-
-.container
+.banner
 {
-    padding-left: 64px;
-	padding-right: 64px;
-}
-.portada
-{ 
-    grid-area: portada;
-
-
+    .container
+    {
+        max-width: 1600px;
+            margin: 0 auto;
+            padding-left: 128px;
+            padding-right: 128px;
+    }
 }
 .titulo 
 {
 	text-align: center;
-    margin-top: 32px;
-	margin-bottom: 32px;
+    padding-top: 32px;
+	padding-bottom: 32px;
 	text-transform: uppercase;
-	color: #313131;
+	color: #1b1a1a;
 	font-size: 36px;
 }
 .tecnologia
 {
-    background-color: gray;
-}
-.tecno
-{
+    
+    background-color: #e6e7eb;
+    .container
+    {
+        max-width: 1600px;
+	margin: 0 auto;
+    padding-left: 128px;
+	padding-right: 128px;
+    }
+    .tecno
+    {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -182,8 +208,22 @@ header {
                 border-radius: 15px;                
             }
     }
+    }
 }
-.servicios-grid
+.servicios
+{
+    background-color: #e8e8e8;
+    padding-bottom: 32px;
+
+    .container
+    {
+        max-width: 1600px;
+	margin: 0 auto;
+    padding-left: 128px;
+	padding-right: 128px;
+    }
+    
+    .servicios-grid
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -211,26 +251,28 @@ header {
         }
     }
 }
+}
+
 footer{
-    padding-left: 32px;
-	padding-right: 32px;
-    display: flex;
-	justify-content: space-between;
-    align-items: center;
-    height: 100px;
+    background-color: #1b1a1a;
     
-}
-.logo_img
-{
-    height: 2.5em;
-    width: 10em;  
-}
-.footer_redes
-{
-   justify-self: end; 
-}
-.footer__redes__img
-{
-    height: 27px;
-    width: 27px;
+
+    .container
+    {
+        color: #fff;
+        display: flex;
+	    justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        max-width: 1600px;
+	    margin: 0 auto;
+        padding-left: 128px;
+	    padding-right: 128px; 
+    }
+    
+    .footer__redes__img
+    {
+        height: 27px;
+        width: 27px;
+    }
 }
