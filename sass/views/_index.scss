@@ -39,6 +39,7 @@
         font-weight: 700;
     }
 }
+
 .titulo 
 {
 	text-align: center;
@@ -100,7 +101,7 @@
         
             
             span {
-                color: #FF9FDB;
+                color: #0EB0CF;
             }
 
             @media (max-width: 767px) {
@@ -160,15 +161,16 @@ header
         {
 			display: grid;
 			grid-gap: 16px;
-			grid-template-columns: repeat(4, auto);
+			grid-template-columns: repeat(2, auto);
 
 			@media (max-width: 767px) {
 				display: none;
 			}
 
 			a {
+                font-family: funcitylevel2stencil;
 				color: #fff;
-				font-size: 20px;
+				font-size: 18px;
 				text-decoration: none;
 			}
 		}
@@ -185,29 +187,69 @@ header
 }
 .tecnologia
 {
-    
     background-color: #e6e7eb;
     padding-bottom: 40px;
     
-    
     .tecno
     {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
-    
+        max-width: 100%; 
+        border: solid #1b1a1a;
+        display: grid;
+        border-radius: 10px;
+        grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 767px) {
-        grid-template-columns: 1fr;
-       
-    }
+        @media (max-width: 767px) 
+        {
+            grid-template-columns: 1fr;
+        }
 
     .tecno_uno
     {    
-        max-width: 100%; 
-        border: solid #1b1a1a;
+        
         border-radius: 10px;
-        padding: 16px;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+      
+        .lista-grid
+        { 
+            font-size: 25px; 
+            padding-top: 10px;
+            padding-left: 50px;
+        }
+
+        @media (min-width: 768px) and (max-width: 768px)
+        {
+            font-size: 20px; 
+            padding-top: 10px;
+            padding-left: 16px;
+
+                .lista-grid
+                {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding-top: 10px;
+                    padding-left: 16px;
+                    font-size: 18px;
+                }
+        }
+
+        @media (max-width: 767px)
+        {
+            padding: 16px;
+            font-size: 15px;
+
+            .lista-grid
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 10px;
+                padding-left: 16px;
+                font-size: 15px;
+            }
+        }
+
+       
     }
     .tecno_dos
     { 
@@ -219,7 +261,7 @@ header
                 display: block;
 				max-width: 100%;				
 				object-fit: cover;
-                border-radius: 10px;                
+                border-radius: 7px;                
             }
     }
     }
@@ -228,6 +270,7 @@ header
 {
     background-color: whitesmoke;
     padding-bottom: 40px;
+    font-size: 20px;
 
     
     
@@ -244,23 +287,30 @@ header
                 grid-column-start: span 2;
             }
 
+            font-size: 19px;
         }
 
         @media (max-width: 767px) {
             grid-template-columns: 1fr;
 
-            font-size: 15px;
+            font-size: 17px;
            
         }
 
         .servi
         {
+            background-color: #e6e7eb;
             border-radius: 10px; 
             box-shadow: 1px 6px 12px rgba(0.8, 0.8, 0.8, 0.8); 
            
            .content
-           {
-            padding: 16px;
+           {    
+                padding: 16px;
+
+               h3
+               {
+                   padding-bottom: 3px;
+               }
            } 
         }
     }
