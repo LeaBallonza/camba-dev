@@ -1,347 +1,360 @@
-*
-{   margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Fira Sans', sans-serif;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 @font-face {
-    font-family: funcitylevel2stencil;
-    src: url(multimedia/FunCityLevel2Stencil.otf);
+  font-family: funcitylevel2stencil;
+  src: url(multimedia/FunCityLevel2Stencil.otf);
 }
-.container
-{
-    width: 100%;
-	max-width: 1600px;
-	margin: 0 auto;
-    padding-left: 128px;
-	padding-right: 128px;
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
 
-	@media (max-width: 1024px) {
-		padding-left: 64px;
-		padding-right: 64px;
-	}
+  @media (max-width: 1024px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
-	@media (max-width: 767px) {
-		padding-left: 32px;
-		padding-right: 32px;
-	}
+  @media (max-width: 767px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
-.camba-dev__titulo
-{
-    font-family: funcitylevel2stencil;
-    font-size: 35px;
+.camba-dev__titulo {
+  font-family: funcitylevel2stencil;
+  font-size: 35px;
+  font-weight: 700;
+
+  @media (max-width: 767px) {
+    font-size: 30px;
     font-weight: 700;
-
-    @media (max-width: 767px) 
-    {
-        font-size: 30px;
-        font-weight: 700;
-    }
+  }
 }
 
-.titulo 
-{
-	text-align: center;
-    padding-top: 32px;
-	padding-bottom: 32px;
-	text-transform: uppercase;
-	color: #1b1a1a;
-	font-size: 36px;
+.titulo {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-transform: uppercase;
+  color: #1b1a1a;
+  font-size: 36px;
 
-    @media (max-width: 768px){
-
-        font-size: 25px;
-    }
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 }
-.servi_img
-{
+.servi_img {
+  display: block;
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom: solid #69d6ff;
+}
+
+.banner {
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background-image: url("../css/multimedia/portada3.jpg");
+  background-position: top center;
+  background-size: cover;
+  &:after {
+    content: "";
     display: block;
-    width: 100%;
-    max-height: 128px;
-    object-fit: cover;
-    border-top-right-radius: 7px; 
-    border-top-left-radius: 7px;
-    border-bottom: solid #0544CF;
-    
-    
-}
-
-.banner	
-{
-    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: #0544cf;
+    opacity: 0.8;
+  }
+  .container {
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    
-    background-image: url('../css/multimedia/portada3.jpg');
-    background-position: top center;
-    background-size: cover;
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 0;
-        background-color: #0544CF;
-        opacity: 0.8;
+    z-index: 1;
+
+    h1 {
+      font-size: 72px;
+      margin-bottom: 32px;
+
+      span {
+        color: #0eb0cf;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 32px;
+      }
     }
+
+    h3 {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 32px;
+
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+header {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+
+  .logo_img {
+    height: 2.5em;
+    width: 10em;
+  }
+
+  .container {
+    padding-top: 10px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: inherit;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 900;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    nav {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: repeat(2, auto);
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      a {
+        font-family: funcitylevel2stencil;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.is-scrolling {
+    background-color: #0544cf;
     .container {
-        
-        position: relative;
-        z-index: 1;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}
+.tecnologia {
+  background-color: #e6e7eb;
+  padding-bottom: 50px;
 
-        h1 {
-            font-size: 72px;
-            margin-bottom: 32px;
-        
-            
-            span {
-                color: #0EB0CF;
-            }
+  .tecno {
+    max-width: 100%;
+    border: solid #1b1a1a;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
 
-            @media (max-width: 767px) {
-                font-size: 32px;
-            }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
+    .tecno_uno {
+      padding-top: 30px;
+      padding-left: 30px;
+      border-radius: 10px;
+      font-size: 28px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      .lista-grid {
+        font-size: 25px;
+        padding-top: 10px;
+        padding-left: 50px;
+      }
+
+      @media (min-width: 768px) and (max-width: 768px) {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 16px;
+
+        .lista-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 10px;
+          padding-left: 16px;
+          font-size: 18px;
         }
+      }
+
+      @media (max-width: 767px) {
+        padding: 16px;
+        font-size: 15px;
+
+        .lista-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 10px;
+          padding-left: 16px;
+          font-size: 15px;
+        }
+      }
+    }
+    .tecno_dos {
+      border-radius: 10px;
+
+      .tecno_dos_img {
+        display: block;
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+.servicios {
+  background-color: whitesmoke;
+  padding-bottom: 40px;
+  font-size: 20px;
+
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 18px;
+
+    @media (min-width: 768px) and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+
+      :nth-child(3) {
+        grid-column-start: span 2;
+      }
+
+      font-size: 19px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+
+      font-size: 17px;
+    }
+
+    .servi {
+      background-color: #e6e7eb;
+      border-radius: 10px;
+      box-shadow: 1px 6px 12px rgba(0.8, 0.8, 0.8, 0.8);
+
+      .content {
+        padding: 16px;
 
         h3 {
-            font-size: 36px;
-            font-weight: 400;
-            margin-bottom: 32px;
-
-            @media (max-width: 767px) {
-                font-size: 20px;
-            }
+          padding-bottom: 3px;
         }
-    }	
-}
-header 
-    {
-	color: #fff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 99;
-
-    .logo_img
-    {
-        height: 2.5em;
-        width: 10em;  
+      }
     }
-    
-	.container 
-        {
-          
-		    padding-top: 10px;
-		    padding-bottom: 32px;
-		    display: flex;
-		    justify-content: space-between;
-		    align-items: center;
-
-		h2 
-            {
-                color: inherit;
-                text-transform: uppercase;
-                font-size: 32px;
-                font-weight: 900;
-
-			span 
-            {
-				font-weight: 600;
-			}
-		}
-
-		nav 
-        {
-			display: grid;
-			grid-gap: 16px;
-			grid-template-columns: repeat(2, auto);
-
-			@media (max-width: 767px) {
-				display: none;
-			}
-
-			a {
-                font-family: funcitylevel2stencil;
-				color: #fff;
-				font-size: 18px;
-				text-decoration: none;
-			}
-		}
-	}
-
-	&.is-scrolling {
-		background-color: #0544cf;
-        .container {
-			padding-top: 16px;
-			padding-bottom: 16px;
-		}
-	
-	}
+  }
 }
-.tecnologia
-{
-    background-color: #e6e7eb;
-    padding-bottom: 40px;
-    
-    .tecno
-    {
-        max-width: 100%; 
-        border: solid #1b1a1a;
-        display: grid;
-        border-radius: 10px;
-        grid-template-columns: 1fr 1fr;
+.portfolio {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #1A1C1A;
+  
 
-        @media (max-width: 767px) 
-        {
-            grid-template-columns: 1fr;
-        }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px;
 
-    .tecno_uno
-    {    
-        
-        border-radius: 10px;
-        font-size: 28px;
-        font-weight: 500;
-        text-transform: uppercase;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+      background-image: url('../css/multimedia/project-img.jpg');
+      border-radius: 16px;
+      overflow: hidden;
       
-        .lista-grid
-        { 
-            font-size: 25px; 
-            padding-top: 10px;
-            padding-left: 50px;
+
+      .content {
+        height: 280px;
+        opacity: 0;
+        color: #FFF;
+        padding: 16px;
+        background-color: #0544cf;
+        transition: 0.4s;
+
+        h3 {
+          font-size: 32px;
+          margin-bottom: 16px;
+
+          @media (max-width: 1024px) {
+            font-size: 28px;
+          }
         }
 
-        @media (min-width: 768px) and (max-width: 768px)
-        {
-            font-size: 20px; 
-            padding-top: 10px;
-            padding-left: 16px;
+        p {
+          font-size: 20px;
+          margin-bottom: 16px;
 
-                .lista-grid
-                {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    padding-top: 10px;
-                    padding-left: 16px;
-                    font-size: 18px;
-                }
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
         }
+      }
 
-        @media (max-width: 767px)
-        {
-            padding: 16px;
-            font-size: 15px;
-
-            .lista-grid
-            {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                padding-top: 10px;
-                padding-left: 16px;
-                font-size: 15px;
-            }
+      &:hover {
+        .content {
+          opacity: 0.8;
         }
+      }
+    }
+  }
 
-       
-    }
-    .tecno_dos
-    { 
-        
-        border-radius: 10px;
-
-            .tecno_dos_img
-            {
-                display: block;
-				max-width: 100%;				
-				object-fit: cover;
-                border-radius: 7px;                
-            }
-    }
-    }
+  .center {
+    text-align: center;
+  }
 }
-.servicios
-{
-    background-color: whitesmoke;
-    padding-bottom: 40px;
-    font-size: 20px;
+footer {
+  background-color: #1b1a1a;
 
-    
-    
-    .servicios-grid
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 18px;
+  .container {
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 
-        @media (min-width: 768px) and (max-width: 768px){
-            grid-template-columns: repeat(2, 1fr);
-
-            :nth-child(3){
-                grid-column-start: span 2;
-            }
-
-            font-size: 19px;
-        }
-
-        @media (max-width: 767px) {
-            grid-template-columns: 1fr;
-
-            font-size: 17px;
-           
-        }
-
-        .servi
-        {
-            background-color: #e6e7eb;
-            border-radius: 10px; 
-            box-shadow: 1px 6px 12px rgba(0.8, 0.8, 0.8, 0.8); 
-           
-           .content
-           {    
-                padding: 16px;
-
-               h3
-               {
-                   padding-bottom: 3px;
-               }
-           } 
-        }
+    @media (max-width: 767px) {
+      font-size: 12px;
     }
-}
+  }
 
-
-footer{
-    background-color: #1b1a1a;
-    
-
-    .container
-    {
-        padding: 20px;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-	    justify-content: space-between;
-        align-items: center;
-        height: 100px;
-
-        @media (max-width: 767px)
-        {
-            font-size: 12px;   
-        }
-
-       
-    }
-    
-    .footer__redes__img
-    {
-        height: 30px;
-        width: 30px;
-    }
+  .footer__redes__img {
+    height: 30px;
+    width: 30px;
+  }
 }
