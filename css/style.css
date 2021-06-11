@@ -356,15 +356,19 @@ header.is-scrolling .container {
 }
 
 .portfolio .portfolio-grid .portfolio-item {
+  background-image: url("../css/multimedia/project-img.jpg");
   border-radius: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow: hidden;
 }
 
 .portfolio .portfolio-grid .portfolio-item .content {
   height: 280px;
+  opacity: 0;
   color: #FFF;
   padding: 16px;
+  background-color: #0544cf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .portfolio .portfolio-grid .portfolio-item .content h3 {
@@ -387,6 +391,10 @@ header.is-scrolling .container {
   .portfolio .portfolio-grid .portfolio-item .content p {
     font-size: 16px;
   }
+}
+
+.portfolio .portfolio-grid .portfolio-item:hover .content {
+  opacity: 0.8;
 }
 
 .portfolio .center {
