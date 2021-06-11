@@ -63,6 +63,13 @@
 
 .portfolio--modificador {
   color: #fff;
+  padding-bottom: 0px;
+}
+
+.portfolio--modificador1 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: none;
 }
 
 .servi_img {
@@ -79,7 +86,7 @@
 .portfolio-img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -241,6 +248,7 @@ header.is-scrolling .container {
 .tecnologia .tecno .tecno_uno {
   padding-top: 30px;
   padding-left: 30px;
+  padding-bottom: 10px;
   border-radius: 10px;
   font-size: 28px;
   font-weight: 500;
@@ -297,6 +305,19 @@ header.is-scrolling .container {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 7px;
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  .tecnologia .tecno .tecno_dos {
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tecnologia .tecno .tecno_dos .tecno_dos_img {
+    width: 100%;
+    height: 180px;
+  }
 }
 
 .servicios {
@@ -377,10 +398,6 @@ header.is-scrolling .container {
 .portfolio .portfolio-grid .portfolio-item .content {
   color: whitesmoke;
   padding: 16px;
-}
-
-.portfolio .center {
-  text-align: center;
 }
 
 footer {

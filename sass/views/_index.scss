@@ -50,6 +50,12 @@
 }
 .portfolio--modificador {
   color: #fff;
+  padding-bottom: 0px;
+}
+.portfolio--modificador1 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: none;
 }
 .servi_img {
   display: block;
@@ -63,7 +69,7 @@
 .portfolio-img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   object-position: top;
   border-radius: 16px;
@@ -194,6 +200,7 @@ header {
     .tecno_uno {
       padding-top: 30px;
       padding-left: 30px;
+      padding-bottom: 10px;
       border-radius: 10px;
       font-size: 28px;
       font-weight: 500;
@@ -241,6 +248,17 @@ header {
         max-width: 100%;
         object-fit: cover;
         border-radius: 7px;
+      }
+
+      @media (min-width: 768px) and (max-width: 768px){
+        height: 200px;
+      }
+      @media (max-width: 767px) {
+
+        .tecno_dos_img{
+          width: 100%;
+          height: 180px;
+        }
       }
     }
   }
@@ -311,9 +329,7 @@ header {
     }
   }
 
-  .center {
-    text-align: center;
-  }
+  
 }
 footer {
   background-color: #1b1a1a;
