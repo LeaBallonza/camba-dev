@@ -292,18 +292,18 @@ header {
     }
 
     .portfolio-item {
-      background-image: url('../css/multimedia/project-img.jpg');
+      
       border-radius: 16px;
-      overflow: hidden;
+      object-fit: cover;
+      
       
 
       .content {
         height: 280px;
-        opacity: 0;
+       
         color: #FFF;
         padding: 16px;
-        background-color: #0544cf;
-        transition: 0.4s;
+       
 
         h3 {
           font-size: 32px;
@@ -324,11 +324,7 @@ header {
         }
       }
 
-      &:hover {
-        .content {
-          opacity: 0.8;
-        }
-      }
+     
     }
   }
 
